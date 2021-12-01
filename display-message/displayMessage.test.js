@@ -9,7 +9,7 @@
       <button id="button">Display message</button>
       <p id="message"></p>
     </div>`;
-
+    
     require('./index');
 
   // Simulate a click on our button

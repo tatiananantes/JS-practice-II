@@ -2,14 +2,15 @@
  * @jest-environment jsdom
  */
 
- test('displays a counter after a click', () => {
+test('changes the counter after a click', () => {
   // Set up our document body
   // (remember this value "mocks" our HTML page so Jest can use it)
-  document.body.innerHTML = `<span id="counter">0</span>
-  <button id="inc-button">Increment</button>`;
+  document.body.innerHTML = `
+  <span id="counter">0</span>
+  <button id="inc-button">Increment</button>
+  `;
 
-    require('./index');
-
+  require('./index');
   // Simulate a click on our button
   const button = document.querySelector('#inc-button');
   button.click();

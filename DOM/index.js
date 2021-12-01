@@ -1,11 +1,11 @@
-const addNewPost = require('./addNewPost');
+// const addNewPost = require('./addNewPost');
 
 const buttonEl = document.querySelector('#add-post-btn');
 const inputEl = document.querySelector('input');
 
 buttonEl.addEventListener('click', () => {
-  const newTitle = inputEl.value;
-  addNewPost(newTitle);
+  const title = inputEl.value;
+  addNewPost(title);
 });
 
 // const element = document.querySelector('#post-1');
@@ -19,3 +19,5 @@ buttonEl.addEventListener('click', () => {
 //   });
 //   return contents;
 //   }
+
+
